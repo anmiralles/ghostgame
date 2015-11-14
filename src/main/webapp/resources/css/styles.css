@@ -1,0 +1,98 @@
+/************************/
+/*** GENERAL STYLES **/
+/************************/
+.porcen3 {width: 3%;}
+.porcen4 {width: 4%;}
+.porcen5 {width: 5%;}
+.porcen6 {width: 6%;}
+.porcen7 {width: 7%;}
+.porcen8 {width: 8%;}
+.porcen9 {width: 9%;}
+.porcen10 {width: 10%;}
+.porcen11 {width: 11%;}
+.porcen12 {width: 12%;}
+.porcen13 {width: 13%;}
+.porcen14 {width: 14%;}
+.porcen15 {width: 15%;}
+.porcen16 {width: 16%;}
+.porcen17 {width: 17%;}
+.porcen18 {width: 18%;}
+.porcen20 {width: 20%;}
+.porcen23 {width: 23%;}
+.porcen24 {width: 24%;}
+.porcen25 {width: 25%;}
+.porcen27 {width: 27%;}
+.porcen28 {width: 28%;}
+.porcen30 {width: 30%;}
+.porcen32 {width: 32%;}
+.porcen35 {width: 35%;}
+.porcen40 {width: 40%;}
+.porcen45 {width: 45%;}
+.porcen47 {width: 47%;}
+.porcen50 {width: 50%;}
+.porcen55 {width: 55%;}
+.porcen60 {width: 60%;}
+.porcen66 {width: 66%;}
+.porcen67 {width: 67%;}
+.porcen68 {width: 68%;}
+.porcen70 {width: 70%;}
+.porcen72 {width: 72%;}
+.porcen75 {width: 75%;}
+.porcen76 {width: 76%;}
+.porcen80 {width: 80%;}
+.porcen83 {width: 83%;}
+.porcen84 {width: 84%;}
+.porcen85 {width: 85%;}
+.porcen86 {width: 86%;}
+.porcen90 {width: 90%;}
+.porcen94 {width: 94%;}
+.porcen95 {width: 95%;}
+.porcen96 {width: 96%;}
+.porcen97 {width: 97%;}
+.porcen98 {width: 98%;}
+.porcen99 {width: 99%;}
+.porcen100 {width: 100%;}
+
+.vporcen100 {height: 100%;}
+.vporcen90 {height: 90%;}
+.vporcen80 {height: 80%;}
+.vporcen70 {height: 70%;}
+.vporcen60 {height: 60%;}
+.vporcen50 {height: 50%;}
+.vporcen40 {height: 40%;}
+.vporcen30 {height: 30%;}
+.vporcen20 {height: 20%;}
+.vporcen10 {height: 10%;}
+
+.hcenter {text-align: center;}
+.hright {text-align: right;}
+.hleft {text-align: left;}
+
+.vtop {vertical-align: top;}
+.vcenter {vertical-align: middle;}
+.vbottom {vertical-align: bottom;}
+
+/************************/
+/*** BODY STYLES ********/
+/************************/
+.panel_game{
+    border: 1px solid red;
+    margin-left: 10%;
+    height: 250px;
+}
+
+.text_name{
+    color: red;
+}
+
+.text_winner{
+    color: red;
+    text-height: max-size;
+}
+
+/************************/
+/*** FOOT STYLES ********/
+/************************/
+.panel_foot{
+    margin-left: 10%;
+}

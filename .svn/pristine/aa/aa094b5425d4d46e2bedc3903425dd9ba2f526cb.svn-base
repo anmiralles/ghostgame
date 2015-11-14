@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://java.sun.com/jsf/html">
+  				
+    
+    <h:form>  
+        <p:growl id="growl" />
+        
+        <h:panelGrid cellpadding="10" cellspacing="0" columns="1" styleClass="porcen80 hcenter panel_game" >
+            
+            <p:outputLabel value="#{msg.text_welcome}"/>
+            <p:inputText placeholder="#{msg.text_name}" value="#{ghostGameManagedBean.strName}" maxlength="20" size="25"/>
+            <p:commandButton value="#{msg.btn_start}" ajax="false" action="#{ghostGameManagedBean.startPlaying}"/>
+            
+        </h:panelGrid>
+    </h:form>
+    
+</ui:composition>

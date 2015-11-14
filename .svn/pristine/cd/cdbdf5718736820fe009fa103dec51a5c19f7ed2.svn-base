@@ -1,0 +1,19 @@
+# MESSAGES
+info_first_letter = Por favor, seleccione primera letra.
+info_next_letter = Por favor, seleccione siguiente letra.
+info_no_pattern = No existen palabras con las letras introducidas.
+info_no_word = Se ha completado una palabra.
+info_no_letter = Debe introducir una letra.
+info_close_session = Comencemos de nuevo!
+info_human_wins = Usted gana!
+info_computer_wins = La computadora gana!
+
+text_welcome = Bienvenido a Ghost Game, introduce tu nombre y pulsa comenzar.
+text_name = Nombre
+text_start = Bienvenido: 
+text_word = Palabra en juego --> 
+text_idiom = Ingl\u00e9s
+
+btn_start = Comenzar
+btn_reset = Cancelar
+btn_restart = Reiniciar

@@ -1,0 +1,42 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://java.sun.com/jsf/html">
+  				
+    
+    <h:form>  
+        <p:growl id="growl" />
+        
+        <h:panelGrid id="out" cellpadding="10" cellspacing="0" columns="1" styleClass="porcen80 hcenter panel_game" >
+            
+            <h:panelGroup>
+                <p:outputLabel value="#{msg.text_start}"/> 
+                <p:outputLabel value="#{ghostGameManagedBean.strName}" styleClass="text_name"/>
+            </h:panelGroup>
+            
+            <h:panelGroup>
+                <p:outputLabel value="#{msg.text_word} #{ghostGameManagedBean.wordInPlay_}" />  
+                <p:spacer width="10"/>
+                <p:inputText maxlength="1" size="5" readonly="#{ghostGameManagedBean.gameOver_}" 
+                             value="#{ghostGameManagedBean.letter}" validator="letterValidator">  
+                    <p:ajax event="keyup" update="out growl" listener="#{ghostGameManagedBean.pickLetter()}"/>  
+                </p:inputText>  
+            </h:panelGroup>  
+            
+            
+            <p:commandButton value="#{msg.btn_reset}" ajax="false" immediate="true" 
+                             action="#{ghostGameManagedBean.closeSession()}"
+                             rendered="#{!ghostGameManagedBean.gameOver_}"/>
+
+            <p:outputLabel value="#{ghostGameManagedBean.strUserMessage}" styleClass="text_winner"
+                           rendered="#{ghostGameManagedBean.gameOver_}"/> 
+            <p:commandButton value="#{msg.btn_restart}" ajax="false" immediate="true" 
+                             action="#{ghostGameManagedBean.closeSession()}"
+                             rendered="#{ghostGameManagedBean.gameOver_}"/>
+            
+            
+            <h:inputHidden value="#{ghostGameManagedBean.wordInPlay_}"/>
+        </h:panelGrid>
+    </h:form>
+    
+</ui:composition>
